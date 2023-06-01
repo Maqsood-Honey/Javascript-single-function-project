@@ -1,0 +1,175 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym & Fitnees</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap");
+
+      body {
+        margin: 0px;
+        padding: 0;
+        background-image: url("https://source.unsplash.com/collection/190727/1600x900");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+      }
+      .left {
+        /* border: 2px solid red; */
+        background-color: black;
+
+        width: 14%;
+        height: 14%;
+        position: relative;
+        float: left;
+        margin-left: 20px;
+        margin-top: 5px;
+        opacity: 0.75;
+        cursor: pointer;
+      }
+      .left div {
+        text-align: center;
+        font-size: 26px;
+        line-height: 20px;
+        background-color: black;
+      }
+      /* .name {
+        /* border: 2px solid green; */
+      /*        font-size: 26px;
+        width: 100%;
+        background-color: black;
+        height: 20%;
+        position: absolute;
+        top: 65px;
+        line-height: 0px;
+      } */
+
+      .left img {
+        /* border: 2px solid black; */
+        position: relative;
+        left: 20px;
+        height: 60px;
+        width: 85%;
+        filter: invert(100%);
+      }
+      .mid {
+        font-family: "Baloo Bhai 2", cursive;
+        /* border: 2px solid red; */
+        font-size: 25px;
+        font-weight: bolder;
+        position: absolute;
+        left: 25%;
+        width: 50%;
+        top: 0px;
+        margin: 5px auto;
+      }
+      .right {
+        float: right;
+        /* border: 2px solid red; */
+        margin: 10px auto;
+      }
+      .navbar li {
+        display: inline-block;
+      }
+      .navbar li a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+      }
+      .navbar li a:hover {
+        background-color: grey;
+        text-decoration: underline;
+      }
+      .btn {
+        font-family: "Baloo Bhai 2", cursive;
+        background-color: black;
+        color: white;
+        margin: 0 0px;
+        padding: 13px 20px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: grey;
+        border: 2px solid white;
+      }
+      .container {
+        border: 2px solid white;
+        border-radius: 10px;
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        width: 40%;
+        height: 60%;
+      }
+      .form-group input {
+        display: block;
+        text-align: center;
+        align-items: center;
+        margin: 10px auto;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+      }
+      .container h1 {
+        text-align: center;
+      }
+      .container button {
+        display: block;
+        width: 40%;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container-bg">
+        <div class="left">
+          <img src="./logo.png" alt="" />
+          <div class="name">Awesome Fitness</div>
+        </div>
+        <div class="mid">
+          <ul class="navbar">
+            <li><a href="#"> Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="./contactUs.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <button class="btn">Call us Now <i class="fa fa-phone"></i></button>
+          <button class="btn">Email Us <i class="fa fa-envelope"></i></button>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join us at Lahore now</h1>
+      <form action="index.php">
+        <div class="form-group">
+          <input type="text" placeholder="Enter Your Name" />
+        </div>
+        <div class="form-group">
+          <input type="number" placeholder="Enter Your Age" />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Enter Your Gender" />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Enter Your Locality" />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Enter Your Mobile Number" />
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:aliceblue;    
+}
+.wrapper{
+    height: 230px;
+    /* height: 250px; */
+    width: 30%;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background: white;
+    border:10px solid yellowgreen;
+    transition: height 1s 0.05s ease;
+}
+.wrapper.active{
+    height: 503px;
+}
+
+header p{
+    margin: 10px;
+}
+
+.form :where(input,button){
+width: 100%;
+height: 50px;
+border-radius: 10px;
+border: none;
+outline: none;
+}
+
+.form input{
+    border: 1px solid rgb(173, 154, 154);
+    padding: 0px 15px;
+    font-size: 15px;
+    margin: 5px;
+}
+.form button{
+    background-color: #3498D8;
+    color: white;
+    font-size: 15px;
+    padding: 0;
+    cursor: pointer;
+}
+.wrapper .qr-code{
+
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    border: 2px solid #ccc;
+    padding: 20px 0px;
+    margin: 10px;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.wrapper.active .qr-code{
+    
+    transition: opacity 1s 0.05s ease-in;
+    opacity: 1;
+    pointer-events: none;
+
+}
+
+@media screen and (max-width: 1090px) {
+    .wrapper h1 {font-size: 20px; text-align: center;}
+    .wrapper p {font-size: 12px; text-align: center;}
+    .wrapper { border: 2px solid red;}
+  }
+@media screen and (max-width: 484px) {
+    .wrapper h1 {font-size: 15px; text-align: center;}
+    .wrapper p {font-size: 8px; text-align: center;}
+    .wrapper  { border: 2px solid green;}
+    .wrapper .form button  { font-size: 12px;}
+  }
+
+
+
+    /* For active class */
+
+@media screen and (max-width: 1091px) {
+    .wrapper.active h1 {font-size: 30px; text-align: center;}
+    .wrapper.active { border: 2px solid red;}
+  }
+
+@media screen and (max-width: 900px) {
+    .wrapper.active h1 {font-size: 30px; text-align: center;}
+    .wrapper.active { border: 2px solid yellow;}
+    .wrapper.active .qr-code img {height: 150px; width: 150px; }
+    .wrapper.active p{ text-align: center;}
+  }
+@media screen and (max-width: 700px) {
+    .wrapper.active h1 {font-size: 30px; text-align: center;}
+    .wrapper.active p{ text-align: center;}
+    .wrapper.active { border: 2px solid blue;}
+    .wrapper.active .qr-code img {height: 150px; width: 150px; }
+    .wrapper.active .qr-code{border:hidden }
+  }
+@media screen and (max-width: 525px) {
+    .wrapper.active { height: 400px;}
+    .wrapper.active h1 {font-size: 20px; text-align: center;}
+    .wrapper.active p{ text-align: center; font-size: 10px;}
+    .wrapper.active { border: 2px solid black;}
+    .wrapper.active .qr-code img {height: 100px; width: 100px; }
+    .wrapper.active .qr-code{border:hidden }
+    .wrapper.active .form button{font-size: 12px; }
+    .wrapper.active .form input{padding: 0; }
+
+  }
+
+  @media screen and (max-width: 370px) {
+    .wrapper.active { height: 400px;}
+    .wrapper.active h1 {font-size: 15px; text-align: center;}
+    .wrapper.active p{ text-align: center; font-size: 10px;}
+    .wrapper.active { border: 2px solid pink;}
+    .wrapper.active .qr-code img {height: 80px; width: 80px; }
+    .wrapper.active .qr-code{border:hidden }
+    .wrapper.active .form button{font-size: 12px; }
+    .wrapper.active .form input{padding: 0; }
+
+  }

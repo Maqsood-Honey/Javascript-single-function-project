@@ -1,0 +1,17 @@
+{
+  "editor.accessibilitySupport": "off",
+  "editor.fontSize": 20,
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "files.associations": {"*html": "html"},
+
+  "emmet.includeLanguages": {
+      "javascript": "javascriptreact",
+      "vue-html": "html",
+      "razor": "html",
+      "plaintext": "jade"
+  }
+  
+}

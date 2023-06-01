@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+   
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin:0;
+}
+.bg{
+    background: url('./francesco-ungaro-97465.jpg') no-repeat center; 
+    background-size: cover;
+    position: absolute;
+    width: calc(100vw + 60px) ;
+    height: calc(100vh + 60px) ;
+    top:-30px;
+    left: -30px;
+    filter: blur(10px);
+    z-index: -1;
+}
+.text-load{
+    color: white;
+    font-size: 30px;
+    z-index: 1;
+    
+}
